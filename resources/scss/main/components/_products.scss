@@ -1,0 +1,350 @@
+.products{
+    width:100%;
+    margin-top:37px;
+    &__welcome-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title{
+        font-family: 'Lexend', sans-serif;
+        font-size:22px;
+        font-weight:600;
+        line-height:34px;
+        @include min(992px){
+            font-size:28px;
+            line-height:44px;
+        }
+        @include min(1360px){
+            font-size:36px;
+            line-height:54px;
+        }
+    }
+    &__btn-all{
+        border: 1px solid $lightGrey;
+        border-radius:10px;
+        padding: 11px 20px 11px 20px;
+        background: transparent;
+        max-width:124px;
+        transition: background .3s ease-out;
+        cursor: pointer;
+        span{
+            font-family: 'Lexend', sans-serif;
+            font-size:14px;
+            color:$standartColor;
+        }
+    }
+    &__btn-all:hover{
+        background: #35974014;
+    }
+    &__wrapper-types{
+        @include min(992px){
+            gap:18px !important;
+            justify-content: space-around !important;
+        }
+        @include min(1360px){
+            gap:12px !important;
+        }
+        @include min(1700px){
+            justify-content: center !important;
+            gap:16px !important;
+        }
+    }
+    &__wrapper-slide{
+        position: relative !important;
+        @include min(992px){
+            width:fit-content !important;
+        }
+    }
+    &__slider-types{
+        margin-top:27px;
+    }
+    &__types_slide-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        svg{
+            width:24px;
+            height:24px;
+            position: absolute;
+            top:17px;
+            left:8px;
+            fill: $standartColor;
+            @include min(1360px){
+                width:32px;
+                height:32px;
+                position: relative;
+                left:-15px;
+                top:0;
+            }
+        }
+        .bundle-svg{
+            fill:transparent;
+            stroke: $standartColor;
+        }
+    }
+    &__type-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:16px;
+        background:transparent;
+        border:2px solid $lightGrey;
+        border-radius:8px;
+        transition: all .3s ease-out;
+        cursor: pointer;
+        span{
+            font-family: 'Lexend', sans-serif;
+            font-size:14px;
+            line-height: 24.95px;
+            color:$textPrimary;
+            text-transform: uppercase;
+            margin-left:16px;
+            transition: all .3s ease-out;
+            @include min(1360px){
+                margin-left:0px;
+            }
+        }
+        @include min(992px){
+            padding:16px 20px;
+        }
+        @include min(1360px){
+           padding:16px 41px;
+        }
+        @include min(1700px){
+            padding:16px 50px;
+        }
+    }
+    &__type-btn:hover{
+        border-color:#35974014;
+    }
+    &__type-btn.active{
+        background:transparent;
+        border-color:$standartColor;
+        span{
+            color:$standartColor;
+        }
+    }
+    &__dropdowns-container{
+        position: relative;
+    }
+    &__dropdown{
+        display: none;
+        width:100%;
+        background:#fff;
+        border-radius:12px;
+        padding:25px;
+        position: absolute;
+        left:0px;
+        top:0px;
+        gap:16px;
+        overflow:scroll;
+        z-index:1000;
+        box-shadow: 0px 14px 26px 0px #0000001C;
+        @include min(1700px){
+            overflow: hidden;
+        }
+    }
+    &__dropdown--vegetables.active{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__dropdown-item{
+        padding-bottom:16px;
+        border-bottom: 1px solid #EFEFEF;
+    }
+    &__dropdown-link{
+        text-decoration: none;
+        color:$textPrimary;
+        font-family: 'Lexend', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28.51px;
+        transition: color .3s ease-in ;        
+    }
+    &__dropdown-link:hover{
+        color:$hoverColor;
+    }
+    &__slider-goods{
+        position: relative !important;
+        z-index:1 !important;
+    }
+    &__wrapper-goods{
+        @include min(992px){
+            display: flex !important;
+            flex-wrap: wrap !important;
+            gap:15px !important;
+        }
+        @include min(1360px){
+            gap:30px !important;
+        }
+    }
+    &__slide-goods{
+        @include min(992px){
+            width:49.2% !important;
+        }
+        @include min(1360px){
+            width:31.8% !important;
+        }
+    }
+    &__slider-goods{
+        margin-top:27px;
+    }
+    &__slide-goods{
+        display: flex;
+        flex-direction: column;
+        gap:12px;
+        list-style: none;
+    }
+    &__good-card{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        min-height:512px;
+        border:2px solid $lightGrey;
+        border-radius:8px;
+        position: relative;
+        padding:28px;
+    }
+    &__like-btn{
+        text-decoration: none;
+        border:1px solid $lightGrey;
+        background:#fff;
+        border-radius:50%;
+        padding:7px;
+        position: absolute;
+        top:10px;
+        right: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        transition: all .3s ease-in;
+        .good-heart-icon{
+            width:20px;
+            height:17px;
+            fill:#FFCF55;
+            @include min(576px){
+                width:24px;
+                height:20px;
+            }
+        }
+    }
+    &__like-btn:hover{
+        background:#ffcf5526;
+        border-color:#ffcf553c
+    }
+    &__like-link.active{
+        border-color:#FFCF55;
+    }
+    &__good-img{
+        width:260px;
+        padding-top:20px;
+        object-fit: contain;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        @include min(375px){
+            width:294px;
+            height:294px;        
+        }
+    }
+    &__grade-container{
+        display: flex;
+        align-items:center;
+        gap:13px;
+        margin-top:24px;
+    }
+    &__grade-count{
+        font-family: 'Lexend', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24.95px;
+        color:$textSecondary;
+        @include min(576px){
+            font-size:16px;
+        }
+    }
+    &__stars{
+        display: flex;
+        svg{
+            width:16px;
+            height:16px;
+            fill:#FFCF55;
+            @include min(576px){
+                width:20px;
+                height:20px;
+            }
+        }
+    }
+    &__good-title{
+        margin-top:4px;
+        font-size:16px;
+        font-family: 'Lexend', sans-serif;
+        font-weight:500;
+        line-height: 25px;
+        color:$textPrimary;
+    }
+    &__price-container{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        .products-red_fire-icon{
+            width:32px;
+            height:32px;
+        }
+    }
+    &__sale-price-container{
+        display: flex;
+        align-items:center;
+        justify-content: baseline;
+    }
+    &__sale-price-container > &__good-price{
+        margin-left:4px;
+    }
+    &__good-price{
+        font-family: 'Lexend', sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 54px;
+        color:$textPrimary;
+    }
+    &__good-oldPrice{
+        font-family: 'Lexend', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28.51px;
+        color:$textSecondary;
+        text-decoration: line-through;
+        margin-left:15px;        
+    }
+    &__cart-btn{
+        text-decoration: none;
+        border:1px solid $lightGrey;
+        background:#fff;
+        border-radius:8px;
+        padding:7px;
+        position: relative;
+        left:17px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        transition: all .3s ease-in;
+        .good-cart-icon{
+            width:20px;
+            height:20px;
+            fill:$standartColor;
+            @include min(576px){
+                width:24px;
+                height:20px;
+            }
+        }
+    }   
+    &__cart-btn:hover{
+        background:#35974014;
+        border-color:#35974034;
+    }
+}
