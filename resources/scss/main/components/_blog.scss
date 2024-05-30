@@ -167,6 +167,8 @@
         padding:11px 33px;
         border-radius:8px;
         margin-top: 14px;
+        cursor:pointer;
+        transition: background .3s ease-in;
         a{
             text-decoration: none;
             color:$standartColor;
@@ -176,6 +178,9 @@
             line-height: 28.51px;
             
         }
+    }
+    &__btn-more:hover{
+        background:#35974014;
     }
     &__slide-card.green-card{
         background:#EAF1EB;
