@@ -208,6 +208,10 @@
         position: relative;
         padding:28px;
     }
+    &__link{
+        text-decoration: none;
+        display: flex;
+    }
     &__like-btn{
         text-decoration: none;
         border:1px solid $lightGrey;

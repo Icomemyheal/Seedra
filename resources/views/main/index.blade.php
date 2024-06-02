@@ -107,7 +107,9 @@
                         <button class="products__like-btn">
                             <svg class="icon good-heart-icon"><use xlink:href="./img/sprites.svg#icon-heart"></use></svg>
                         </button>
-                        <img src="./img/good_cilantro.jpg" alt="clintaro_seeds" class="products__good-img" loading="lazy">
+                        <a href="#" class="products__link">
+                            <img src="./img/good_cilantro.jpg" alt="clintaro_seeds" class="products__good-img" loading="lazy">
+                        </a>
                          <div class="products__grade-container">
                             <div class="products__stars">
                                 <svg class="icon good-full-star-icon"><use xlink:href="./img/sprites.svg#icon-star"></use></svg>
@@ -133,7 +135,9 @@
                         <button class="products__like-btn">
                             <svg class="icon good-heart-icon"><use xlink:href="./img/sprites.svg#icon-heart"></use></svg>
                         </button>
-                        <img src="./img/good_corn.jpg" alt="clintaro_seeds" class="products__good-img" loading="lazy">
+                        <a href="#" class="products__link">
+                            <img src="./img/good_corn.jpg" alt="clintaro_seeds" class="products__good-img" loading="lazy">
+                        </a>
                         <div class="products__grade-container">
                             <div class="products__stars">
                                 <svg class="icon good-full-star-icon"><use xlink:href="./img/sprites.svg#icon-star"></use></svg>
@@ -159,7 +163,9 @@
                         <button class="products__like-btn">
                             <svg class="icon good-heart-icon"><use xlink:href="./img/sprites.svg#icon-heart"></use></svg>
                         </button>
-                        <img src="./img/good_spinach.jpg" alt="clintaro_seeds" class="products__good-img" loading="lazy">
+                        <a href="#" class="products__link">
+                            <img src="./img/good_spinach.jpg" alt="clintaro_seeds" class="products__good-img" loading="lazy">
+                        </a>
                         <div class="products__grade-container">
                             <div class="products__stars">
                                 <svg class="icon good-full-star-icon"><use xlink:href="./img/sprites.svg#icon-star"></use></svg>
@@ -185,7 +191,9 @@
                         <button class="products__like-btn">
                             <svg class="icon good-heart-icon"><use xlink:href="./img/sprites.svg#icon-heart"></use></svg>
                         </button>
-                        <img src="./img/good_cilantro.jpg" alt="clintaro_seeds" class="products__good-img" loading="lazy">
+                        <a href="#" class="products__link">
+                            <img src="./img/good_cilantro.jpg" alt="clintaro_seeds" class="products__good-img" loading="lazy">
+                        </a>
                         <div class="products__grade-container">
                             <div class="products__stars">
                                 <svg class="icon good-full-star-icon"><use xlink:href="./img/sprites.svg#icon-star"></use></svg>
@@ -211,7 +219,9 @@
                         <button class="products__like-btn">
                             <svg class="icon good-heart-icon"><use xlink:href="./img/sprites.svg#icon-heart"></use></svg>
                         </button>
-                        <img src="./img/good_corn.jpg" alt="clintaro_seeds" class="products__good-img" loading="lazy">
+                        <a href="#" class="products__link">
+                            <img src="./img/good_corn.jpg" alt="clintaro_seeds" class="products__good-img" loading="lazy">
+                        </a>
                         <div class="products__grade-container">
                             <div class="products__stars">
                                 <svg class="icon good-full-star-icon"><use xlink:href="./img/sprites.svg#icon-star"></use></svg>
@@ -241,7 +251,9 @@
                         <button class="products__like-btn">
                             <svg class="icon good-heart-icon"><use xlink:href="./img/sprites.svg#icon-heart"></use></svg>
                         </button>
-                        <img src="./img/good_spinach.jpg" alt="clintaro_seeds" class="products__good-img" loading="lazy">
+                        <a href="#" class="products__link">
+                            <img src="./img/good_spinach.jpg" alt="clintaro_seeds" class="products__good-img" loading="lazy">
+                        </a>
                         <div class="products__grade-container">
                             <div class="products__stars">
                                 <svg class="icon good-full-star-icon"><use xlink:href="./img/sprites.svg#icon-star"></use></svg>
